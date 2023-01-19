@@ -1,0 +1,20 @@
+name: stylechecks
+run_id: commands[0]
+env LANGUAGE: en_IN:en
+env LANG: en_IN
+env TERM: xterm-256color
+env PATH: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin:/home/rituraj/miniconda3/envs/myenv/bin:/home/rituraj/miniconda3/condabin:/home/rituraj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+env PYTHONHASHSEED: 1508200288
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env TOX_ENV_NAME: stylechecks
+env TOX_WORK_DIR: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox
+env TOX_ENV_DIR: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app
+env VIRTUAL_ENV: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app
+env COLUMNS: 183
+env LINES: 45
+metadata pid: 12646
+cwd: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api
+allow: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin/*
+cmd: flake8 app
+exit_code: 0

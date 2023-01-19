@@ -1,0 +1,67 @@
+name: typechecks
+run_id: install_deps
+env LANGUAGE: en_IN:en
+env LANG: en_IN
+env TERM: xterm-256color
+env PATH: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin:/home/rituraj/miniconda3/envs/myenv/bin:/home/rituraj/miniconda3/condabin:/home/rituraj/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+env PYTHONHASHSEED: 3453818201
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env TOX_ENV_NAME: typechecks
+env TOX_WORK_DIR: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox
+env TOX_ENV_DIR: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app
+env VIRTUAL_ENV: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app
+env COLUMNS: 183
+env LINES: 45
+metadata pid: 13096
+cwd: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api
+allow: /home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin/*
+cmd: pip install -r test_requirements.txt
+exit_code: -2
+Collecting uvicorn<0.18.0,>=0.16.0
+  Using cached uvicorn-0.17.6-py3-none-any.whl (53 kB)
+Collecting fastapi[all]<1.0.0,>=0.64.0
+  Using cached fastapi-0.89.1-py3-none-any.whl (55 kB)
+Collecting python-multipart<0.1.0,>=0.0.5
+  Using cached python_multipart-0.0.5-py3-none-any.whl
+Collecting pydantic<1.10.0,>=1.8.1
+  Using cached pydantic-1.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+Collecting typing_extensions<4.0.0,>=3.7.4
+  Using cached typing_extensions-3.10.0.2-py3-none-any.whl (26 kB)
+Collecting loguru<0.6.0,>=0.5.3
+  Using cached loguru-0.5.3-py3-none-any.whl (57 kB)
+Collecting tid-regression-model==3.0.3
+  Using cached tid_regression_model-3.0.3-py3-none-any.whl (190 kB)
+Collecting pytest<6.3.0,>=6.2.3
+  Using cached pytest-6.2.5-py3-none-any.whl (280 kB)
+Collecting requests<2.24.0,>=2.23.0
+  Using cached requests-2.23.0-py2.py3-none-any.whl (58 kB)
+
+standard error:
+[31mERROR: Operation cancelled by user[0m[31m
+[0mTraceback (most recent call last):
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/bin/pip", line 10, in <module>
+    sys.exit(main())
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_internal/cli/main.py", line 70, in main
+    return command.main(cmd_args)
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_internal/cli/base_command.py", line 101, in main
+    return self._main(args)
+  File "/home/rituraj/miniconda3/envs/myenv/lib/python3.9/contextlib.py", line 124, in __exit__
+    next(self.gen)
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_internal/cli/command_context.py", line 20, in main_context
+    yield
+  File "/home/rituraj/miniconda3/envs/myenv/lib/python3.9/contextlib.py", line 513, in __exit__
+    raise exc_details[1]
+  File "/home/rituraj/miniconda3/envs/myenv/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_internal/utils/temp_dir.py", line 70, in tempdir_registry
+    yield _tempdir_registry
+  File "/home/rituraj/miniconda3/envs/myenv/lib/python3.9/contextlib.py", line 498, in __exit__
+    if cb(*exc_details):
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_vendor/requests/sessions.py", line 455, in __exit__
+    self.close()
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_vendor/requests/sessions.py", line 797, in close
+    v.close()
+  File "/home/rituraj/house_prices/deploying-machine-learning-models/section-06-model-serving-api/house-prices-api/.tox/test_app/lib/python3.9/site-packages/pip/_vendor/cachecontrol/adapter.py", line 136, in close
+    self.cache.close()
+KeyboardInterrupt
